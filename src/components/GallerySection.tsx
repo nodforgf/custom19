@@ -80,20 +80,25 @@ function PhotoCard({ photoUrl, idx, style, photoDate }: PhotoCardProps) {
 
         {/* หน้าหลัง (Back): ข้อความ */}
         <div
-          className="absolute inset-3 bottom-12 flex flex-col items-center justify-between p-2 bg-[#fff8fb] rounded-sm"
+          className="absolute inset-2 bottom-12 grid grid-rows-[auto_1fr_auto] p-2 bg-[#fff8fb] rounded-sm h-[calc(100%-8px)]"
           style={{ backfaceVisibility: "hidden" as const, WebkitBackfaceVisibility: "hidden", transform: "rotateY(180deg)" }}
         >
-          <span className="text-[#e8789a] text-sm flex-shrink-0 mt-1">♥</span>
+          {/* ส่วนหัว (Top) */}
+          <div className="text-center w-full flex-shrink-0">
+            <span className="text-[#e8789a] text-sm">♥</span>
+          </div>
           
-          {/* 🎯 ส่วนที่แก้ไข: กล่องข้อความสกรอลล์ได้เมื่อยาวเกินพื้นที่การ์ด */}
-          <div className="w-full flex-1 my-2 overflow-y-auto px-1 flex items-center scrollbar-none" style={{ scrollbarWidth: 'none' }}>
-            <p className="text-[#c2547a] font-bold text-center italic break-words text-[11px] leading-relaxed w-full">
-              "{messages[idx % messages.length]}"
-            </p>
+          {/* 🎯 ส่วนที่แก้ไขใหม่: เอาพวกรอยหยัก flex items-center ออก แล้วใช้ block แทน เพื่อไม่ให้ข้อความส่วนแรกโดนดันทะลุหายไป */}
+          <div className="w-full overflow-y-auto px-1 block scrollbar-none" style={{ scrollbarWidth: 'none' }}>
+            <div className="w-full pt-1 pb-3">
+              <p className="text-[#c2547a] font-bold text-center italic break-words text-[11px] leading-relaxed w-full">
+                "{messages[idx % messages.length]}"
+              </p>
+            </div>
           </div>
 
-          <div className="w-full flex flex-col items-center flex-shrink-0">
-            <div className="w-8 h-[1px] bg-[#e8789a]/20 mb-1" />
+          {/* ส่วนท้าย (Bottom) */}
+          <div className="w-full flex flex-col items-center pt-1 border-t border-[#e8789a]/10 flex-shrink-0">
             <span className="text-[#c2547a]/40 text-[9px] uppercase tracking-tighter">
               Memory #{idx + 1}
             </span>
