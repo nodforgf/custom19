@@ -4,12 +4,12 @@ import { useState, useEffect } from 'react';
 import confetti from 'canvas-confetti';
 
 const CARD_IMAGES = [
-    "/images/7.jpg",
-    "/images/8.jpg",
-    "/images/9.jpg",
-    "/images/10.jpg",
-    "/images/11.jpg",
-    "/images/12.jpg",
+    "/images/7.jpeg",
+    "/images/8.jpeg",
+    "/images/9.jpeg",
+    "/images/10.jpeg",
+    "/images/11.jpeg",
+    "/images/12.jpeg",
 ];
 
 export default function GiftQuestSection({ onBack, onFinish }: { onBack: () => void, onFinish: () => void }) {
@@ -27,8 +27,8 @@ export default function GiftQuestSection({ onBack, onFinish }: { onBack: () => v
     const [isSpinning, setIsSpinning] = useState(false);
 
     const GIFTS = [
-        "จุ๊บเค้า 100 ครั้ง🫦", "บอกรักเค้าา🫶🏻🩷", "บอกเหตุผลที่ชอบเค้า💓", "เรียกชื่อที่อยากให้เรียกก💞",
-        "กอดแฟนเย้อเย้ออ🫂", "ให้เค้าทำอะไรก็ได้หนึ่งอย่างง😎", ".คุณแฟนดีเด่น🥇", "เป็นคนโปรดของเค้าตลอดไป💌"
+        "ตามใจเทอ1วัน💓", "เทอต้องเต้นเพลงตามที่เค้าบอก💃", "เค้าต้องหอมแก้มเทอ100รอบ🫦", "พาไปดูหนัง🎬",
+        "เทอต้องหอมแก้มเค้า100รอบ😘", "ดอกไม้1ช่อ💐", ".เทอต้องพาไปกินชานมไข่มุก🧋", "เทอต้องตามใจเค้าตลอดไป💌"
     ];
 
     const fireConfetti = () => {

@@ -18,16 +18,13 @@ function PhotoCard({ photoUrl, idx, style, photoDate }: PhotoCardProps) {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const messages = [
-    "ครั้งแรกที่เราเจอกันน วันที่ 31 ธันวาา พอตั้งแต่วันนั้นเราก็อยู่ด้วยกันมาตลอดเยยเนอะะ มีกันทุกวันเลย ไปไหนทำอะไรก็ทำด้วยกันตลอด แทบไม่ห่างกันเลยแหนะะ", // idx 0 (Memory #1)
-    "วันที่ขอเป็นแฟน🥺 ตื่นเต้นมากตอนนั้น เค้ารู้แค่ว่าไม่อยากปล่อยเธอไปให้ใคร ต้องรีบขออแย้วว ไม่งั้นคงไม่มีเธออีก ไม่เคยอยากเสียเธอไปเลย เธอเป็นคนที่เค้าอยากใช้ชีวิตด้วยมากๆ", // idx 1 (Memory #2)
-    "ครบรอบหนึ่งเดือนน ดอกไม้ช่อแรกที่ให้เธออ เธอเป็นคนแรกเลยนะคะ ที่เค้าให้ดอกไม้",     // idx 2 (Memory #3)
-    "ครบรอบสองเดือน ต้าววหมู เรียกเค้าาหมูดีนัก เยยเติมอู๊ดให้เยยนี่",
-    "ครบรอบสามเดือนน ดอกไม้อีกช่อนึง จ๋วยเหมือนเธอเยยแหนะแฟนน",
-    "ครบรอบสี่เดือนน สิ่งที่แฟนอยากได้ บิ๊กไบค์สุดดเท่ ไม่ว่าแฟนอยากได้อะไรเค้าจำได้หมดด",
+    "รูปนี้เป็นรูปที่เค้าแอบถ่ายเทอนั่งห่างเป็นเมตรแหนะ55", // idx 0 (Memory #1)
+    "อันนี้ตอนเทอเข้าโรงบาลตอนนั้นเค้าเป็นห่วงเทอมาก", // idx 1 (Memory #2)
+    "รูปคู่รูปแรกแบบเค้าเกร็งมากกก5644",     // idx 2 (Memory #3)
+    "อันนี้ตอนเทอเตะบอลแล้วก็เป็นครั้งแรกที่เค้าได้ดูเทอเล่นน",
+    "อันนี้เค้าก็แอบถ่ายอีก",
+    "รูปนี้เค้าชอบมากแก้มเยอะสุดๆน่าบีบมากก",
   ];
-
-  // 🎯 เช็กว่าเป็นหมวดข้อความยาว (การ์ดใบที่ 1 และ 2) หรือไม่
-  const isLongText = idx === 0 || idx === 1;
 
   return (
     <motion.div
@@ -91,9 +88,10 @@ function PhotoCard({ photoUrl, idx, style, photoDate }: PhotoCardProps) {
             <span className="text-[#e8789a] text-sm">♥</span>
           </div>
           
-          {/* 🎯 ส่วนที่แก้ไข: ถ้าเป็นการ์ด 1,2 (isLongText) ให้ใช้ block ชิดบนเพื่อให้สกรอลล์ได้ปกติ ถ้าการ์ดอื่นใช้ flex items-center ดึงให้อยู่ตรงกลาง */}
+          {/* 🎯 ปรับทุกการ์ดให้ใช้ flex items-center justify-center เพื่อจัดข้อความให้อยู่กึ่งกลางเสมอ 
+              แต่ยังคงเปิด overflow-y-auto เผื่อสกรอลล์ในกรณีที่ข้อความยาวมาก ๆ ไว้ครับ */}
           <div 
-            className={`w-full overflow-y-auto px-1 scrollbar-none ${isLongText ? 'block' : 'flex items-center'}`} 
+            className="w-full h-full overflow-y-auto px-1 scrollbar-none flex items-center justify-center" 
             style={{ scrollbarWidth: 'none' }}
           >
             <div className="w-full pt-1 pb-2">
@@ -118,12 +116,12 @@ function PhotoCard({ photoUrl, idx, style, photoDate }: PhotoCardProps) {
 
 export default function GallerySection({ onNext }: GallerySectionProps) {
   const myPhotos = [
-    "/images/1.jpg",
-    "/images/2.jpg",
-    "/images/3.jpg",
-    "/images/4.jpg",
-    "/images/5.jpg",
-    "/images/6.jpg",
+    "/images/1.jpeg",
+    "/images/2.jpeg",
+    "/images/3.jpeg",
+    "/images/4.jpeg",
+    "/images/5.jpeg",
+    "/images/6.jpeg",
   ];
 
   const photoDates = [
