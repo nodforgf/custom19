@@ -18,12 +18,12 @@ function PhotoCard({ photoUrl, idx, style, photoDate }: PhotoCardProps) {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const messages = [
-    "รูปนี้เป็นรูปที่เค้าแอบถ่ายเทอนั่งห่างเป็นเมตรแหนะ55", // idx 0 (Memory #1)
-    "อันนี้ตอนเทอเข้าโรงบาลตอนนั้นเค้าเป็นห่วงเทอมาก", // idx 1 (Memory #2)
-    "รูปคู่รูปแรกแบบเค้าเกร็งมากกก5644",     // idx 2 (Memory #3)
-    "อันนี้ตอนเทอเตะบอลแล้วก็เป็นครั้งแรกที่เค้าได้ดูเทอเล่นน",
-    "อันนี้เค้าก็แอบถ่ายอีก",
-    "รูปนี้เค้าชอบมากแก้มเยอะสุดๆน่าบีบมากก",
+    "❤️❤️", // idx 0 (Memory #1)
+    "ดูหนังเรื่องที่2 (ขอโทษ)", // idx 1 (Memory #2)
+    "โทรกับอ้วนเดือนมีนา",     // idx 2 (Memory #3)
+    "ไปกินบิงซูๆ",
+    "ต้นกล้ามารับไปวิลัย◌ิ◌ิ",
+    "ไปคลองถมกับต้นกล้าา",
   ];
 
   return (
@@ -116,12 +116,12 @@ function PhotoCard({ photoUrl, idx, style, photoDate }: PhotoCardProps) {
 
 export default function GallerySection({ onNext }: GallerySectionProps) {
   const myPhotos = [
-    "/images/1.jpeg",
-    "/images/2.jpeg",
+    "/images/1.jpg",
+    "/images/2.jpg",
     "/images/3.jpg",
-    "/images/4.jpeg",
-    "/images/5.jpeg",
-    "/images/6.jpeg",
+    "/images/4.jpg",
+    "/images/5.jpg",
+    "/images/6.jpg",
   ];
 
   const photoDates = [

@@ -4,16 +4,16 @@ import { useState } from 'react';
 
 // --- ความปรารถนา preset ทั้งหมด ---
 const WISHES = [
-  { id: 1,  text: "เค้าอยากไปดูหนังกับเทอ",                color: "#ffd6e7" },
-  { id: 2,  text: "เค้าอยากไปคาเฟ่กับเทอ", color: "#fce4ec" },
-  { id: 3,  text: "เค้าอยากนอนกอดเทออ",        color: "#fff0f8" },
-  { id: 4,  text: "เค้าอยากไปเที่ยวกับเทอ",           color: "#ffd6e7" },
-  { id: 5,  text: "เค้าอยากไปทะเลกับเทอ",          color: "#fce4ec" },
-  { id: 6,  text: "เค้าอยากไปกินหมูกระทะกับเทอ",  color: "#fff0f8" },
-  { id: 7,  text: "เค้าอยากกินหม่าล่ากับเทอ",          color: "#ffd6e7" },
-  { id: 8,  text: "เค้าอยากดูหนังอยู่บ้านกับเทอสองคน",         color: "#fce4ec" },
-  { id: 9,  text: "เค้าอยากกอดเทอ",            color: "#fff0f8" },
-  { id: 10, text: "เค้าอยากทำทุกๆอย่างกับเทอ",            color: "#ffd6e7" },
+  { id: 1,  text: "ขับรถเล่น",                color: "#ffd6e7" },
+  { id: 2,  text: "ไปกินหมูกระทะ", color: "#fce4ec" },
+  { id: 3,  text: "ไปกินชาบู",        color: "#fff0f8" },
+  { id: 4,  text: "ถ่ายphotobooth",           color: "#ffd6e7" },
+  { id: 5,  text: "ไปคอนเสิร์ต",          color: "#fce4ec" },
+  { id: 6,  text: "ไปเที่ยว",  color: "#fff0f8" },
+  { id: 7,  text: "ไปกินหม่าล่า",          color: "#ffd6e7" },
+  { id: 8,  text: "ไปกินบิงซู",         color: "#fce4ec" },
+  { id: 9,  text: "ไปดูหนัง",            color: "#fff0f8" },
+  { id: 10, text: "ไปคาเฟ่",            color: "#ffd6e7" },
 ];
 
 // ตำแหน่งกระดาษในโหล (x, y, rotate) — อยู่ใน viewBox 300x360
