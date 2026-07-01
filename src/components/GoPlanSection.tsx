@@ -4,16 +4,16 @@ import { useState } from 'react';
 
 // --- ความปรารถนา preset ทั้งหมด ---
 const WISHES = [
-  { id: 1,  text: "ขับรถเล่น",                color: "#ffd6e7" },
-  { id: 2,  text: "ไปกินหมูกระทะ", color: "#fce4ec" },
-  { id: 3,  text: "ไปกินชาบู",        color: "#fff0f8" },
-  { id: 4,  text: "ถ่ายphotobooth",           color: "#ffd6e7" },
-  { id: 5,  text: "ไปคอนเสิร์ต",          color: "#fce4ec" },
-  { id: 6,  text: "ไปเที่ยว",  color: "#fff0f8" },
-  { id: 7,  text: "ไปกินหม่าล่า",          color: "#ffd6e7" },
-  { id: 8,  text: "ไปกินบิงซู",         color: "#fce4ec" },
-  { id: 9,  text: "ไปดูหนัง",            color: "#fff0f8" },
-  { id: 10, text: "ไปคาเฟ่",            color: "#ffd6e7" },
+  { id: 1,  text: "กินหม่าล่า",                color: "#ffd6e7" },
+  { id: 2,  text: "ตามใจ 1 วัน", color: "#fce4ec" },
+  { id: 3,  text: "วันนี้งดตัดคลิป",        color: "#fff0f8" },
+  { id: 4,  text: "นอนอยู่บ้านตีพุง",           color: "#ffd6e7" },
+  { id: 5,  text: "วันนี้ไม่ต้องออกกำลังกาย",          color: "#fce4ec" },
+  { id: 6,  text: "พูดเพราะๆกับที่รัก",  color: "#fff0f8" },
+  { id: 7,  text: "ที่รักสั่งอะไรก็ทำ",          color: "#ffd6e7" },
+  { id: 8,  text: "พูดเพราะๆ กับที่รัก",         color: "#fce4ec" },
+  { id: 9,  text: "นอนดูหนัง 5 เรื่อง",            color: "#fff0f8" },
+  { id: 10, text: "นวดๆให้ฟรี 5 นาที",            color: "#ffd6e7" },
 ];
 
 // ตำแหน่งกระดาษในโหล (x, y, rotate) — อยู่ใน viewBox 300x360
