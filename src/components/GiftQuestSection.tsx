@@ -4,10 +4,10 @@ import { useState, useEffect } from 'react';
 import confetti from 'canvas-confetti';
 
 const CARD_IMAGES = [
-    "/images/7.JPG",
-    "/images/8.JPG",
-    "/images/9.JPG",
-    "/images/10.JPG",
+    "/images/7.jpg",
+    "/images/8.jpg",
+    "/images/9.jpg",
+    "/images/10.jpg",
     "/images/11.png",
     "/images/12.png",
 ];
