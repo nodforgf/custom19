@@ -18,13 +18,12 @@ function PhotoCard({ photoUrl, idx, style, photoDate }: PhotoCardProps) {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const messages = [
-    "ไปกินตี๋น้อยกับที่รัก สาขานี้ม่ายมีคิวเล้ย", // idx 0 (Memory #1)
-    "ไปกินหลงหวังหม่าล่าร้านโปรดร้านใหม่ เดี๋ยวเดือนนี้พาไปกินอี๊กก", // idx 1 (Memory #2)
-    "ตี๋น้อยอีกแล้ววว ไปกินที่เดอะสตรีทรอคิวนานม้ากกก",     // idx 2 (Memory #3)
-    `ร้านหมูกระทะที่เลียบ
-ด่วนน อยากไปกินอีกก`,
-    "อันนี้ไปกิน kfc ที่เมเจอร์รัชโย คนเยอะมากกวันนั้นนไม่รู้จะกินอะไรจบที่ kfc ตลอดไป",
-    "ไปกินไก่ร้านที่ที่รักบอกว่าอร่อยย (ตอนเมา)",
+    "ทานไอติมด้วยกันครั้งแรก", // idx 0 (Memory #1)
+    "ฉลองวันเกิดอ้วน ครั้งแรกด้วยกัน", // idx 1 (Memory #2)
+    "ฉลองวันเกิดอ้วน ปีที่2 ด้วยกัน",     // idx 2 (Memory #3)
+    "ไปเที่ยวแม่เมาะด้วยกัน",
+    "วันรับปริญญาของเค้า",
+    "ถ่ายรูปตู้photobooth ด้วยกัน",
   ];
 
   return (
@@ -119,10 +118,10 @@ export default function GallerySection({ onNext }: GallerySectionProps) {
   const myPhotos = [
     "/images/1.jpeg",
     "/images/2.jpeg",
-    "/images/3.jpg",
-    "/images/4.jpg",
-    "/images/5.jpg",
-    "/images/6.jpg",
+    "/images/3.jpeg",
+    "/images/4.jpeg",
+    "/images/5.jpeg",
+    "/images/6.jpeg",
   ];
 
   const photoDates = [

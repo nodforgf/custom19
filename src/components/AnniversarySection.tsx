@@ -8,8 +8,8 @@ interface AnniversarySectionProps {
 
 export default function AnniversaryPage({ onFinish }: AnniversarySectionProps) {
   const [isExploding, setIsExploding] = useState(false); 
-  // 🎯 ปรับย้ายปุ่มหัวใจมาลงล็อกวันอังคารที่ 14 กรกฎาคม เรียบร้อยครับ
-  const anniversaryDay = 14; 
+  // 🎯 ปรับย้ายปุ่มหัวใจมาลงล็อกวันอาทิตย์ที่ 12 กรกฎาคม เรียบร้อยครับ
+  const anniversaryDay = 12; 
   
   const handleBurst = () => {
     setIsExploding(true);
@@ -33,7 +33,7 @@ export default function AnniversaryPage({ onFinish }: AnniversarySectionProps) {
         }}
       >
         <div className="absolute inset-0 opacity-[0.08] pointer-events-none" 
-              style={{ backgroundImage: 'linear-gradient(#e8789a 1px, transparent 1px)', backgroundSize: '100% 30px' }} 
+             style={{ backgroundImage: 'linear-gradient(#e8789a 1px, transparent 1px)', backgroundSize: '100% 30px' }} 
         />
         <div className="absolute -top-2 right-10 w-24 h-10 bg-[#f4a7be]/30 backdrop-blur-[2px] rotate-[15deg] border-x border-[#f4a7be]/20 z-30" />
 
@@ -62,7 +62,6 @@ export default function AnniversaryPage({ onFinish }: AnniversarySectionProps) {
 
           <div className="w-[90%] bg-white/60 border border-[#f4a7be]/30 rounded-xl p-5 shadow-sm relative">
             <div className="flex justify-between items-center mb-6 px-1">
-              {/* 📅 อัปเดตหัวข้อปฏิทินเป็น JULY 2026 */}
               <span className="text-[#c2547a] font-black text-[14px] uppercase tracking-[0.2em]">July 2026</span>
             </div>
             <div className="grid grid-cols-7 gap-y-4 text-center items-center">
@@ -70,7 +69,7 @@ export default function AnniversaryPage({ onFinish }: AnniversarySectionProps) {
                 <span key={`h-${index}`} className="text-[9px] font-black text-[#e8789a]/50 tracking-tighter">{day}</span>
               ))}
               
-              {/* 🗓️ ปรับแก้ตรงนี้: ปี 2026 วันที่ 1 กรกฎาคม ตรงกับวันพุธ (WED) จึงต้องขยับดันช่องว่างไป 3 ช่อง */}
+              {/* 🗓️ 1 กรกฎาคม 2026 ตรงกับวันพุธ เว้น 3 ช่อง */}
               {Array.from({ length: 3 }).map((_, index) => (
                 <div key={`empty-${index}`} className="h-10" />
               ))}

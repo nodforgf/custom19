@@ -4,16 +4,16 @@ import { useState } from 'react';
 
 // --- ความปรารถนา preset ทั้งหมด ---
 const WISHES = [
-  { id: 1,  text: "กินหม่าล่า",                color: "#ffd6e7" },
-  { id: 2,  text: "ตามใจ 1 วัน", color: "#fce4ec" },
-  { id: 3,  text: "วันนี้งดตัดคลิป",        color: "#fff0f8" },
-  { id: 4,  text: "นอนอยู่บ้านตีพุง",           color: "#ffd6e7" },
-  { id: 5,  text: "วันนี้ไม่ต้องออกกำลังกาย",          color: "#fce4ec" },
-  { id: 6,  text: "พูดเพราะๆกับที่รัก",  color: "#fff0f8" },
-  { id: 7,  text: "ที่รักสั่งอะไรก็ทำ",          color: "#ffd6e7" },
-  { id: 8,  text: "พูดเพราะๆ กับที่รัก",         color: "#fce4ec" },
-  { id: 9,  text: "นอนดูหนัง 5 เรื่อง",            color: "#fff0f8" },
-  { id: 10, text: "นวดๆให้ฟรี 5 นาที",            color: "#ffd6e7" },
+  { id: 1,  text: "ไปดูพระอาทิตย์ตก🌥️",                color: "#ffd6e7" },
+  { id: 2,  text: "ไปนอนบนดอย⛰️", color: "#fce4ec" },
+  { id: 3,  text: "ไปเที่ยวทะเล",        color: "#fff0f8" },
+  { id: 4,  text: "นอนดูหนังด้วยกันทั้งวัน",           color: "#ffd6e7" },
+  { id: 5,  text: "ทำกับข้าวด้วยกันทุกวัน",          color: "#fce4ec" },
+  { id: 6,  text: "ตื่นเช้ามาเจอหน้าอ้วนทุกวัน",  color: "#fff0f8" },
+  { id: 7,  text: "ไปเที่ยวต่างประเทศด้วยกัน",          color: "#ffd6e7" },
+  { id: 8,  text: "ไปเดินป่าด้วยกัน",         color: "#fce4ec" },
+  { id: 9,  text: "ไปกินของอร่อยๆด้วยกันทุกเดือน",            color: "#fff0f8" },
+  { id: 10, text: "แต่งงานด้วยกัน",            color: "#ffd6e7" },
 ];
 
 // ตำแหน่งกระดาษในโหล (x, y, rotate) — อยู่ใน viewBox 300x360
