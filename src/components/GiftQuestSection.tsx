@@ -27,7 +27,7 @@ export default function GiftQuestSection({ onBack, onFinish }: { onBack: () => v
     const [isSpinning, setIsSpinning] = useState(false);
 
     const GIFTS = [
-        "กินส้มตำ 🍽️", "กินชาบู 🍲", "กินบิงซู 🍨", "กินไอติม 🍧",
+        "กินส้มตำ 🍴", "กินชาบู 🍲", "กินบิงซู 🍨", "กินไอติม 🍧",
         "กินซูชิ 🍣", "กินหมูทะ 🐖", "กินkfc 🍗", "กินปิ้งย่าง 🍖"
     ];
 
